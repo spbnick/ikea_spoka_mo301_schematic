@@ -1,0 +1,327 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 2850 2250 0    50   ~ 0
+J-
+Text Label 2850 2050 0    50   ~ 0
+J+
+Text Label 2850 2150 0    50   ~ 0
+J
+Wire Wire Line
+	3100 2050 2300 2050
+Wire Wire Line
+	2300 2250 3450 2250
+Text Label 2450 2150 0    50   ~ 0
+WHITE
+Text Label 2450 2250 0    50   ~ 0
+BLACK
+Text Label 2450 2050 0    50   ~ 0
+ORANGE
+Wire Wire Line
+	2300 2150 3100 2150
+$Comp
+L Connector:Barrel_Jack_Switch J?
+U 1 1 60F6269D
+P 2000 2150
+F 0 "J?" H 1770 2100 50  0000 R CNN
+F 1 "Barrel_Jack_Switch" H 1770 2191 50  0000 R CNN
+F 2 "" H 2050 2110 50  0001 C CNN
+F 3 "~" H 2050 2110 50  0001 C CNN
+	1    2000 2150
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 60F626A3
+P 3700 2250
+F 0 "D1" H 3700 2467 50  0000 C CNN
+F 1 "D" H 3700 2376 50  0000 C CNN
+F 2 "" H 3700 2250 50  0001 C CNN
+F 3 "~" H 3700 2250 50  0001 C CNN
+	1    3700 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60F626A9
+P 4000 2250
+F 0 "R?" V 3793 2250 50  0000 C CNN
+F 1 "33R" V 3884 2250 50  0000 C CNN
+F 2 "" V 3930 2250 50  0001 C CNN
+F 3 "~" H 4000 2250 50  0001 C CNN
+	1    4000 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60F626AF
+P 4800 2250
+F 0 "R?" V 4593 2250 50  0000 C CNN
+F 1 "360R" V 4684 2250 50  0000 C CNN
+F 2 "" V 4730 2250 50  0001 C CNN
+F 3 "~" H 4800 2250 50  0001 C CNN
+	1    4800 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4300 2850 4300 3050
+Wire Wire Line
+	4650 2650 4600 2650
+Wire Wire Line
+	4300 2450 4300 2250
+Wire Wire Line
+	4150 2250 4300 2250
+Connection ~ 4300 2250
+Wire Wire Line
+	4300 2250 4650 2250
+$Comp
+L Device:R R?
+U 1 1 60F626BF
+P 3450 2650
+F 0 "R?" H 3380 2604 50  0000 R CNN
+F 1 "10R" H 3380 2695 50  0000 R CNN
+F 2 "" V 3380 2650 50  0001 C CNN
+F 3 "~" H 3450 2650 50  0001 C CNN
+	1    3450 2650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3450 3050 3450 2800
+Connection ~ 3450 2250
+Wire Wire Line
+	3450 2250 3550 2250
+Wire Wire Line
+	3450 2500 3450 2250
+Text Label 6100 3050 0    50   ~ 0
+LED-
+$Comp
+L Device:R R?
+U 1 1 60F626CC
+P 4800 2650
+F 0 "R?" V 4593 2650 50  0000 C CNN
+F 1 "240R" V 4684 2650 50  0000 C CNN
+F 2 "" V 4730 2650 50  0001 C CNN
+F 3 "~" H 4800 2650 50  0001 C CNN
+	1    4800 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 2250 5250 2250
+Wire Wire Line
+	5250 2650 4950 2650
+$Comp
+L Switch:SW_Push_DPDT SW?
+U 1 1 60F626E2
+P 5450 1450
+F 0 "SW?" H 5450 1935 50  0000 C CNN
+F 1 "SW_Push_DPDT" H 5450 1844 50  0000 C CNN
+F 2 "" H 5450 1650 50  0001 C CNN
+F 3 "~" H 5450 1650 50  0001 C CNN
+	1    5450 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60F626E8
+P 5950 1350
+F 0 "R?" V 5743 1350 50  0000 C CNN
+F 1 "0R" V 5834 1350 50  0000 C CNN
+F 2 "" V 5880 1350 50  0001 C CNN
+F 3 "~" H 5950 1350 50  0001 C CNN
+	1    5950 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 1350 5800 1350
+Wire Wire Line
+	6100 1350 6300 1350
+Text Label 6100 1350 0    50   ~ 0
+LED+
+Text Label 6200 1750 0    50   ~ 0
+J
+Text Label 5800 1750 0    50   ~ 0
+WHITE
+Wire Wire Line
+	5650 1750 6300 1750
+Wire Wire Line
+	5250 1250 4300 1250
+Wire Wire Line
+	3100 1250 3100 2050
+$Comp
+L Device:Battery BT?
+U 1 1 60F626F7
+P 4300 1700
+F 0 "BT?" H 4408 1746 50  0000 L CNN
+F 1 "Battery" H 4408 1655 50  0000 L CNN
+F 2 "" V 4300 1760 50  0001 C CNN
+F 3 "~" V 4300 1760 50  0001 C CNN
+	1    4300 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3050 4300 3050
+Connection ~ 4300 3050
+Wire Wire Line
+	4300 3050 6300 3050
+Wire Wire Line
+	5250 2650 5250 2250
+Wire Wire Line
+	4300 1500 4300 1250
+Connection ~ 4300 1250
+Wire Wire Line
+	4300 1250 3100 1250
+Wire Wire Line
+	4300 1900 4300 2250
+Wire Wire Line
+	1800 3300 2200 3300
+Text Label 1800 3300 0    50   ~ 0
+LED+
+Text Label 1800 3900 0    50   ~ 0
+LED-
+Wire Wire Line
+	1800 3900 2200 3900
+$Comp
+L Device:LED D?
+U 1 1 60FBB126
+P 2200 3450
+F 0 "D?" V 2239 3332 50  0000 R CNN
+F 1 "LED" V 2148 3332 50  0000 R CNN
+F 2 "" H 2200 3450 50  0001 C CNN
+F 3 "~" H 2200 3450 50  0001 C CNN
+	1    2200 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60FBC4E7
+P 2200 3750
+F 0 "R?" H 2130 3704 50  0000 R CNN
+F 1 "24R" H 2130 3795 50  0000 R CNN
+F 2 "" V 2130 3750 50  0001 C CNN
+F 3 "~" H 2200 3750 50  0001 C CNN
+	1    2200 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2200 3300 2650 3300
+$Comp
+L Device:LED D?
+U 1 1 60FBFE04
+P 2650 3450
+F 0 "D?" V 2689 3332 50  0000 R CNN
+F 1 "LED" V 2598 3332 50  0000 R CNN
+F 2 "" H 2650 3450 50  0001 C CNN
+F 3 "~" H 2650 3450 50  0001 C CNN
+	1    2650 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60FBFE0A
+P 2650 3750
+F 0 "R?" H 2580 3704 50  0000 R CNN
+F 1 "24R" H 2580 3795 50  0000 R CNN
+F 2 "" V 2580 3750 50  0001 C CNN
+F 3 "~" H 2650 3750 50  0001 C CNN
+	1    2650 3750
+	-1   0    0    1   
+$EndComp
+Connection ~ 2200 3900
+Wire Wire Line
+	2200 3900 2650 3900
+Connection ~ 2200 3300
+Wire Wire Line
+	3150 3300 3550 3300
+Text Label 3150 3300 0    50   ~ 0
+LED+
+Text Label 3150 3900 0    50   ~ 0
+LED-
+Wire Wire Line
+	3150 3900 3550 3900
+$Comp
+L Device:LED D?
+U 1 1 60FCFAE6
+P 3550 3450
+F 0 "D?" V 3589 3332 50  0000 R CNN
+F 1 "LED" V 3498 3332 50  0000 R CNN
+F 2 "" H 3550 3450 50  0001 C CNN
+F 3 "~" H 3550 3450 50  0001 C CNN
+	1    3550 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60FCFAEC
+P 3550 3750
+F 0 "R?" H 3480 3704 50  0000 R CNN
+F 1 "24R" H 3480 3795 50  0000 R CNN
+F 2 "" V 3480 3750 50  0001 C CNN
+F 3 "~" H 3550 3750 50  0001 C CNN
+	1    3550 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3550 3300 4000 3300
+$Comp
+L Device:LED D?
+U 1 1 60FCFAF3
+P 4000 3450
+F 0 "D?" V 4039 3332 50  0000 R CNN
+F 1 "LED" V 3948 3332 50  0000 R CNN
+F 2 "" H 4000 3450 50  0001 C CNN
+F 3 "~" H 4000 3450 50  0001 C CNN
+	1    4000 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60FCFAF9
+P 4000 3750
+F 0 "R?" H 3930 3704 50  0000 R CNN
+F 1 "24R" H 3930 3795 50  0000 R CNN
+F 2 "" V 3930 3750 50  0001 C CNN
+F 3 "~" H 4000 3750 50  0001 C CNN
+	1    4000 3750
+	-1   0    0    1   
+$EndComp
+Connection ~ 3550 3900
+Wire Wire Line
+	3550 3900 4000 3900
+Connection ~ 3550 3300
+Connection ~ 5250 2250
+$Comp
+L Device:D_x2_Serial_ACK D2
+U 1 1 60FD306A
+P 5250 1950
+F 0 "D2" V 5204 2030 50  0000 L CNN
+F 1 "D_x2_Serial_ACK" V 5295 2030 50  0000 L CNN
+F 2 "" H 5250 1950 50  0001 C CNN
+F 3 "~" H 5250 1950 50  0001 C CNN
+	1    5250 1950
+	0    1    1    0   
+$EndComp
+NoConn ~ 5050 1950
+$Comp
+L Device:Q_NPN_CBE Q1
+U 1 1 60FDD0B3
+P 4400 2650
+F 0 "Q1" H 4591 2696 50  0000 L CNN
+F 1 "Q_NPN_CBE" H 4591 2605 50  0000 L CNN
+F 2 "" H 4600 2750 50  0001 C CNN
+F 3 "~" H 4400 2650 50  0001 C CNN
+	1    4400 2650
+	-1   0    0    -1  
+$EndComp
+$EndSCHEMATC
